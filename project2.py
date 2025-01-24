@@ -67,7 +67,7 @@ books=[
     Book(8, 'Nueral Nets', 'Author bhai','A very nice book!', 2),
 ]
 
-@app.get("/books", status_code = status.HTTP_2OO_OK)
+@app.get("/books", status_code = status.HTTP_200_OK)
 async def read_all_books(response_model = List[Book]):
     return books
 
